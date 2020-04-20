@@ -1,0 +1,262 @@
+﻿*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #30303a;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  position: relative; }
+
+::selection {
+  background-color: #e01328;
+  color: #fff; }
+
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f1f1f1;
+  line-height: 1; }
+
+.heading-2 {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300; }
+  .heading-2--light {
+    color: #f1f1f1; }
+  .heading-2--dark {
+    color: #40404e; }
+
+.heading-3 {
+  font-size: 2.6rem;
+  color: #e01328;
+  text-transform: uppercase; }
+
+.heading-4 {
+  font-size: 2.4rem;
+  color: #2f5581; }
+  .heading-4--light {
+    color: #f1f1f1; }
+  .heading-4--dark {
+    color: #40404e; }
+
+.heading-5 {
+  font-size: 2.1rem;
+  color: #e01328; }
+
+.underline {
+  text-decoration: underline; }
+
+.bold {
+  font-weight: 600; }
+
+.italic {
+  font-style: italic; }
+
+.red {
+  color: #e01328; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
+
+.login__box {
+  width: 40vw;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 5px #acacac;
+  padding: 5rem;
+  text-align: center;
+  border-radius: 3px; }
+
+.login__line {
+  color: rgba(0, 0, 0, 0.2); }
+
+.login__form-group {
+  margin-bottom: 5rem; }
+
+.login__input {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  color: #2f5581;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all .3s; }
+  .login__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #1a2f47; }
+
+.login__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.login__input:placeholder-shown + .login__label {
+  opacity: 0;
+  transform: translateY(-4rem);
+  visibility: hidden; }
+
+.login__wrapper {
+  background-color: #f1f1f1; }
+
+.login__btn {
+  background-color: rgba(0, 128, 0, 0.8);
+  color: white;
+  width: 80%; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: 2px;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 2rem;
+  font-family: "Baloo Paaji 2", sans-serif;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.main-content {
+  height: 100vh; }
+  .main-content__header {
+    background-color: #1a2f47;
+    padding: 3rem; }
+  .main-content .search {
+    width: min-content; }
+    .main-content .search__title {
+      padding: 3rem 0 0 6rem; }
+    .main-content .search__input {
+      font-family: "Baloo Paaji 2", sans-serif;
+      color: #40404e;
+      background-color: transparent;
+      border: none;
+      font-size: 4rem;
+      display: inline-block; }
+      .main-content .search__input:focus {
+        outline: none; }
+    .main-content .search__info {
+      padding: 6rem;
+      padding-top: 0;
+      display: grid;
+      grid-template-columns: max-content max-content;
+      column-gap: 2rem; }
+    .main-content .search__svg {
+      fill: #00a2ed;
+      position: absolute;
+      width: 5rem;
+      top: -3.8rem;
+      right: 2rem;
+      transition: all .3s; }
+      .main-content .search__svg:hover {
+        cursor: pointer;
+        transform: translateY(-0.5rem); }
+    .main-content .search__loader {
+      display: none; }
+      .main-content .search__loader svg {
+        height: 5.5rem;
+        width: 5.5rem;
+        fill: #e01328;
+        transform-origin: 44% 50%;
+        animation: rotate 1.5s infinite linear; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+      .main-content .search__loader--visible {
+        display: block; }
+  .main-content .input-group {
+    padding: 0.2rem 1rem;
+    background-color: #f1f1f1;
+    border-radius: 2rem;
+    position: relative; }
+
+.movie {
+  max-width: 85rem; }
+  .movie__title {
+    font-size: 3.5rem;
+    color: #b92533; }
+  .movie__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem;
+    column-gap: 3rem; }
+  .movie__data-heading {
+    font-weight: 500;
+    font-size: 2rem; }
+  .movie__rating {
+    font-size: 3rem;
+    color: #e01328; }
+  .movie__plot {
+    grid-column: 1 / 3; }
+  .movie__picture {
+    grid-column: 1 / 2;
+    max-width: 100%; }
+  .movie__seasons {
+    grid-column: 2 / 3; }
+  .movie__season-btn:link, .movie__season-btn:visited {
+    color: #1a2f47;
+    font-weight: 500;
+    transition: all .3s; }
+  .movie__season-btn:active {
+    color: #e01328; }
+  .movie__season-btn:hover {
+    filter: brightness(200%); }
+
+.season__title {
+  font-size: 3.5rem;
+  color: #1a2f47; }
+
+.season__episode {
+  margin-bottom: 2rem; }
+
+.error-label {
+  visibility: hidden;
+  color: red;
+  padding-left: 1rem; }
+  .error-label--visible {
+    visibility: visible; }

@@ -1,0 +1,9 @@
+.error-label {
+    visibility: hidden;
+    color: $color-red;
+    padding-left: 1rem;
+
+    &--visible {
+        visibility: visible;
+    }
+}

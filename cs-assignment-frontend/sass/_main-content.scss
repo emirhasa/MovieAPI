@@ -1,0 +1,78 @@
+.main-content {
+    height: 100vh;
+
+    &__header {
+        background-color: $color-secondary;
+        padding: 3rem;
+    }
+
+    .search {
+        width: min-content;
+
+        &__title {
+            padding: 3rem 0 0 6rem;
+        }
+
+        &__input {
+            font-family: "Baloo Paaji 2", sans-serif;
+            color: $color-gray-dark-1;
+            background-color: transparent;
+            border: none;
+            font-size: 4rem;
+            display: inline-block;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__info {
+            padding: 6rem;
+            padding-top: 0;
+            display: grid;
+            grid-template-columns: max-content max-content;
+            column-gap: 2rem;
+        }
+
+        &__svg {
+            fill: $color-microsoft-blue;
+            position: absolute;
+            width: 5rem;
+            top: -3.8rem;
+            right: 2rem;
+            transition: all .3s;
+
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-0.5rem);
+            }
+        }
+
+        &__loader {   
+            display: none;
+            svg {
+                height: 5.5rem;
+                width: 5.5rem;
+                fill: $color-primary;
+                transform-origin: 44% 50%;
+                animation: rotate 1.5s infinite linear;
+            }
+    
+            @keyframes rotate {
+                0% { transform: rotate(0); }
+                100% { transform: rotate(360deg); }
+            }
+
+            &--visible {
+                display: block;
+            }
+        }
+    }
+
+    .input-group {
+        padding: 0.2rem 1rem;
+        background-color: $color-gray-light-1;
+        border-radius: 2rem;
+        position: relative;
+    }
+}

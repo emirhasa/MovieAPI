@@ -1,0 +1,31 @@
+.btn {
+    &,       
+    &:link, 
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1rem 4rem;
+        display: inline-block;
+        border-radius: 2px;
+        transition: all 0.2s;
+        position: relative;
+        font-size:2rem;
+        font-family: "Baloo Paaji 2", sans-serif;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }  
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    }
+}

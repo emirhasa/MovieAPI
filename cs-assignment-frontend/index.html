@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="cyrillic-software assignment">
+        <meta name="author" content="emir hasagic">
+
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2:400,600,700|Roboto:300,400,400i,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Cyrillic Software assignment</title>
+        
+    </head>
+    <body>
+
+        <section class="main-content">
+
+            <div class="main-content__header">
+                <div class="search input-group">
+                    <input type="text" id="search__input" name="search" class="search__input" placeholder="Movie name..." />
+                    <svg class="search__svg" id="search__button"><use xlink:href="img/sprites.svg#icon-search"></use></svg>
+                </div>
+                <label class="error-label" id="search__error">Please type in something</label>
+            </div>
+
+            <div class="search__title">
+                <h2 class="heading-4">Search results will be displayed below! </h2>
+                <div class="search__loader">
+                    <svg><use xlink:href="img/sprites.svg#icon-loader"></use></svg>
+                </div>                        
+            </div>
+
+            <div class="search__info">
+ 
+                <div class="movie" id="search__result">
+                    <!--div class="movie__title mb-md">
+                        <h3 class="movie__title">Game of Thrones</h3>
+                        <hr>
+                    </div>
+                    <div class="movie__info">
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Runtime:</label><br>
+                            <label class="movie__data-value movie__runtime">57 min</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Year:</label><br>
+                            <label class="movie__data-value movie__year">2011</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Director:</label><br>
+                            <label class="movie__data-value movie__director">David Benioff, D.B. Weiss</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Genre:</label><br>
+                            <label class="movie__data-value movie__year">Drama, Adventure, Medieval</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">IMDB Rating:</label><br>
+                            <label class="movie__data-value movie__rating">8.5 / 10</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Actors:</label><br>
+                            <label class="movie__data-value movie__actors">Lena Headey, Nikolaj-Coster Waldau, Emily Clarke, Sean Bean, Peter Dinklage</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Type:</label><br>
+                            <label class="movie__data-value movie__actors">Series</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">Language:</label><br>
+                            <label class="movie__data-value movie__actors">English</label>
+                        </div>
+                        <div class="movie__cell">
+                            <label class="movie__data-heading">IMDB Votes:</label><br>
+                            <label class="movie__data-value movie__actors">1,429,496</label>
+                        </div>
+                        <div class="movie__cell movie__plot">
+                            <label class="movie__data-heading">Plot:</label><br>
+                            <label class="movie__data-value movie__plot-desc">Nine noble families fight for control over the mythical lands of Westeros, while an ancient enemy returns after being dormant for thousands of years.</label>
+                        </div>
+
+                        <div class="movie__picture">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg" alt="movie title">
+                        </div>
+
+                        <div class="movie__seasons">
+                            <p class="movie__seasons-desc">If seasons are available, click below to get more info.</p>
+                            <label class="season-1"><a href="#season__result" class="movie__season-btn">Season 1</a></label><br>
+                            <label class="season-2"><a href="#season__result" class="movie__season-btn">Season 2</a></label><br>
+                            <label class="season-3"><a href="#season__result" class="movie__season-btn">Season 3</a></label><br>
+                            <label class="season-4"><a href="#season__result" class="movie__season-btn">Season 4</a></label><br>
+                            <label class="season-5"><a href="#season__result" class="movie__season-btn">Season 5</a></label><br>
+                            <label class="season-6"><a href="#season__result" class="movie__season-btn">Season 6</a></label><br>
+                            <label class="season-7"><a href="#season__result" class="movie__season-btn">Season 7</a></label><br>
+                            <label class="season-8"><a href="#season__result" class="movie__season-btn">Season 8</a></label><br>
+                        </div>
+                    </div-->
+                </div>
+                <div class="season" id="season__result">
+                    <!--div class="season__title mb-md">
+                        Season 1
+                        <hr>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 1</label>
+                            <label class="episode__title">Winter Is Coming</label>
+                        </div>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 2</label>
+                            <label class="episode__title">Winter Is Coming</label>
+                        </div>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 3</label>
+                            <label class="episode__title">The Kingsroad</label>
+                        </div>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 4</label>
+                            <label class="episode__title">Lord Snow</label>
+                        </div>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 5</label>
+                            <label class="episode__title">Cripples, Bastards and Broken Things</label>
+                        </div>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 6</label>
+                            <label class="episode__title">The Wolf and the Lion</label>
+                        </div>
+                    </div>
+                    <div class="season__episode">
+                        <div class="episode__header">
+                            <label class="episode__no">Episode 7</label>
+                            <label class="episode__title">A Golden Crown</label>
+                        </div>
+                    </div-->
+                </div>
+                
+            </div>
+        </section>
+
+    </body>
+</html>
+
+<script src="js/index.js"></script>

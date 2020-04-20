@@ -1,0 +1,10 @@
+.season {
+    &__title {
+        font-size: 3.5rem;
+        color: $color-secondary;
+    }
+
+    &__episode {
+        margin-bottom: 2rem;
+    }
+}

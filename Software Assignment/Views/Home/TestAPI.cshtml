@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "_CustomLayout";
+}
+
+<section class="main-content">
+
+    <div class="main-content__header">
+        <div class="search input-group">
+            <input type="text" id="search__input" name="search" class="search__input" placeholder="Movie name..." />
+            <svg class="search__svg" id="search__button"><use xlink:href="/img/sprites.svg#icon-search"></use></svg>
+        </div>
+        <label class="error-label" id="search__error">Please type in something</label>
+    </div>
+
+    <div class="search__title">
+        <h2 class="heading-4">Search results will be displayed below! </h2>
+        <div class="search__loader">
+            <svg><use xlink:href="/img/sprites.svg#icon-loader"></use></svg>
+        </div>
+    </div>
+
+    <div class="search__info">
+
+        <div class="movie" id="search__result">
+            Search for something...
+        </div>
+        <div class="season" id="season__result">
+        </div>
+
+    </div>
+</section>

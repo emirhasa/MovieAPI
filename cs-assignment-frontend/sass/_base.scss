@@ -1,0 +1,55 @@
+// FONT VARIABLES
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Baloo Paaji 2', cursive;
+ 
+// COLOR VARIABLES
+$color-primary: #e01328;
+$color-primary-dark: #b92533; 
+
+$color-secondary-light:#2f5581;
+$color-secondary: #1a2f47;
+$color-secondary-dark: #101d2c;
+
+$color-green: green;
+$color-red: red;
+
+$color-white: #fff;
+$color-black: #000;
+     
+$color-gray-light-1: #f1f1f1;
+$color-gray-light-2: #c9c9c9;
+$color-gray-light-3: #acacac;
+
+$color-gray-dark-1: #40404e;
+$color-gray-dark-2: #30303a;
+
+$color-microsoft-blue: #00a2ed;
+*,    
+*::before,
+*::after {
+    margin: 0;  
+    padding: 0;         
+    box-sizing: inherit;
+} 
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-gray-dark-2;
+    font-weight: 300;  
+    line-height: 1.6;  
+    font-size: 1.6rem;
+    min-height: 100vh;
+    position: relative;
+} 
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+} 
+
