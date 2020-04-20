@@ -1,7 +1,7 @@
 # MovieAPI
 .NET Core WebApp for getting Movie Info
 
-How to test it out? Easy, go to cssa.webapp.brodev.info
+How to test it out? Easy, go to https://cssa.webapp.brodev.info
 Login: test@mail.com / pw: Test123!
 
 Or register with your own account but don't forget to click confirm when prompted or you will be locked out
